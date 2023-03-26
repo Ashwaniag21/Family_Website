@@ -588,6 +588,152 @@
             ;
         }
 
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+    .ftree{
+            height: auto;
+            background-color: whitesmoke;
+        }
+
+        .flabel{
+            margin-top: -30px;
+            font-size: 3rem;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 .3rem .5rem #000;
+            text-transform: uppercase;
+            position: absolute;
+            margin-left: 635px;
+        }
+
+    .tree {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .tree ul {
+        padding-top: 20px;
+        position: relative;
+        transition: .5s;
+    }
+    .tree li {
+        display: inline-table;
+        text-align: center;
+        list-style-type: none;
+        position: relative;
+        padding: 10px;
+        transition: .5s;
+    }
+    .tree li::before, .tree li::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 50%;
+        border-top: 1px solid #ccc;
+        width: 51%;
+        height: 10px;
+    }
+    .tree li::after {
+        right: auto;
+        left: 50%;
+        border-left: 1px solid #ccc;
+    }
+    .tree li:only-child::after, .tree li:only-child::before {
+        display: none;
+    }
+    .tree li:only-child {
+        padding-top: 0;
+    }
+    .tree li:first-child::before, .tree li:last-child::after {
+        border: 0 none;
+    }
+    .tree li:last-child::before {
+        border-right: 1px solid #ccc;
+        border-radius: 0 5px 0 0;
+        -webkit-border-radius: 0 5px 0 0;
+        -moz-border-radius: 0 5px 0 0;
+    }
+    .tree li:first-child::after {
+        border-radius: 5px 0 0 0;
+        -webkit-border-radius: 5px 0 0 0;
+        -moz-border-radius: 5px 0 0 0;
+    }
+    .tree ul ul::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        border-left: 1px solid #ccc;
+        width: 0;
+        height: 20px;
+    }
+    .babba {
+        background-color: rgb(248, 238, 233);
+        border: 1px solid #ccc;
+        padding: 10px;
+        display: inline-grid;
+        border-radius: 5px;
+        text-decoration-line: none;
+        border-radius: 5px;
+        transition: .5s;
+    }
+
+    .son {
+        background-color: rgb(221, 248, 221);
+        border: 1px solid #ccc;
+        padding: 10px;
+        display: inline-grid;
+        border-radius: 5px;
+        text-decoration-line: none;
+        border-radius: 5px;
+        transition: .5s;
+    }
+
+    .greatson {
+        background-color: rgb(248, 247, 220);
+        border: 1px solid #ccc;
+        padding: 10px;
+        display: inline-grid;
+        border-radius: 5px;
+        text-decoration-line: none;
+        border-radius: 5px;
+        transition: .5s;
+    }
+    .tree li a img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px !important;
+        border-radius: 100px;
+        margin: auto;
+    }
+    .tree li a span {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: #666;
+        background-color: whitesmoke;
+        padding: 8px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    /*Hover-Section*/
+    .tree li a:hover, .tree li a:hover i, .tree li a:hover span, .tree li a:hover+ul li a {
+        background: #c8e4f8;
+        color: #000;
+        border: 1px solid #94a0b4;
+    }
+    .tree li a:hover+ul li::after, .tree li a:hover+ul li::before, .tree li a:hover+ul::before, .tree li a:hover+ul ul::before {
+        border-color: #94a0b4;
+    }
+
+
 
         /*----code for responsive design----*/
 
@@ -788,7 +934,27 @@
                 font-size: 20px;
 
             }
+
+            .flabel{
+                margin-top: -89px;
+                font-size: 3rem;
+                color: #fff;
+                text-align: center;
+                text-shadow: 0 0.3rem 0.5rem #000;
+                text-transform: uppercase;
+                /* position: absolute; */
+                margin-left: 120px;
+            }
+
+            .tree {
+                margin-top: -10px;
         }
+
+        .tree li a span {
+              font-size: 6px;
+    }
+}
+
     </style>
 
 </head>
@@ -1016,6 +1182,40 @@
     </section>
 
 
+    <section class="ftree" id="ftree">
+
+        <h1 class="flabel"> family tree</h1>
+
+        <div class="container">
+			<div class="row">
+				<div class="tree">
+					<ul>
+						<li> <a class= "babba" href="#ftree"><img src="babba.jpg"><span>Grand Father</span></a>
+						<ul>
+							<li><a class= "son" href="#ftree"><img src="badePapa.jpg"><span>Bade Papa <br>(grand son)</span></a>
+							<ul>
+								<li> <a class= "greatson" href="#ftree"><img src="bhai.png"><span>Elder Brother<br>(great grand child)</span></a> </li>
+                                <li> <a class= "greatson"href="#ftree"><img  src="vipul.jpg"><span>Brother<br>(great grand child)</span></a> </li>
+							</ul>
+						</li>
+						<li> <a class= "son" href="#ftree"><img  src="papa.jpg"><span>Father<br>(grand son)</span></a>
+						<ul>
+							<li> <a  class= "greatson" href="#ftree"><img src="di.jpg"><span>Elder Sister<br>(great grand child)</span></a> </li>
+							<li> <a class= "greatson" href="#ftree"><img src="pic.jpeg"><span>Me<br> (great grand child)</span></a> </li>
+						</ul>
+					</li>
+
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+
+
+    </section>
+
+
 
     <!----home3 section---->
 
@@ -1092,7 +1292,7 @@
 
         // list script
 
-              var data = [
+        var data = [
             {
                 relation: 'grand father',
                 memberName: 'shri Nandani Prasad Agnihotri',
@@ -1173,7 +1373,7 @@
                     'hight : 5.4 ft',
                     'My mother is my guide, idol, and source of inspiration in life. She is so hard-working, dedicated, and very kind to everyone.',
                     'My mother not only takes care of us but also takes care of our grandparents and whole family. She is the one who creates strong bonds among all our relatives.',
-                    'Everyone tells me that you look like your mother and your qualities are also similar to your mother.',
+                    'Everyone tells me that you look like your mother and your qualities are also similar to your mother',
                 ],
                 imgSrc: 'maa.jpg'
             },
