@@ -181,8 +181,8 @@
             margin: 0 auto;
             letter-spacing: .15em;
             animation:
-                typing 3.5s steps(30, end),
-                blink-caret .5s step-end infinite;
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
             font-size: 3rem;
             color: black;
             text-transform: capitalize;
@@ -280,6 +280,8 @@
         }
 
         .home2 h1 {
+            animation: blinker 1.5s linear infinite;
+            border-left: 6px solid orange;
             margin-top: -40px;
             font-size: 3rem;
             color: #fff;
@@ -308,7 +310,6 @@
 
         .home2Continer {
             background: #fff;
-            /* box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .3); */
             margin-top: 20px;
             /* border: 2px solid red; */
             display: flex;
@@ -320,7 +321,6 @@
 
         .child2 {
             /* border: 1px solid black; */
-
             padding: 10px 20px;
             width: 350px;
             height: auto;
@@ -334,7 +334,6 @@
 
         .home2-img {
             /* border: 1px solid blue; */
-            /* background: #fff; */
             box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .3);
             position: relative;
         }
@@ -348,12 +347,10 @@
         }
 
         .home2-btn {
-            /* border: 1px solid green; */
+            font-size: 18px;
             padding: 10px 20px;
             background-color: aliceblue;
             text-align: center;
-            font-size: 18px;
-            /* position: absolute; */
             margin-top: 10px;
             box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .3);
             font-weight: bold;
@@ -386,10 +383,11 @@
         }
 
         .label {
-
+            animation: blinker 1.5s linear infinite;
+            margin-left: 605px;
+            border-left: 6px solid orange;
             font-size: 3rem;
             color: #fff;
-            text-align: center;
             text-shadow: 0 .3rem .5rem #000;
             padding: 0 1rem;
             text-transform: uppercase;
@@ -427,12 +425,6 @@
 
         }
 
-        .hover-img p {
-            color: #fff;
-            font-size: 15px;
-
-        }
-
         .home2-img:hover .hover-img {
             opacity: 1;
             background: linear-gradient(to bottom, rgba(159, 156, 152, 0) 0%, rgb(204, 137, 21) 100%);
@@ -440,7 +432,8 @@
         }
 
         .heading {
-
+            animation: blinker 1.5s linear infinite;
+            border-left: 6px solid orange;
             font-size: 3rem;
             color: #fff;
             text-align: center;
@@ -514,7 +507,9 @@
         }
 
         .home3 h1 {
-            /* border: 1px solid red ; */
+            animation: blinker 1.5s linear infinite;
+            padding-left: 10px;
+            border-left: 6px solid orange;
             margin-top: -30px;
             font-size: 3rem;
             color: #fff;
@@ -522,7 +517,7 @@
             text-shadow: 0 .3rem .5rem #000;
             text-transform: uppercase;
             position: absolute;
-            margin-left: 600px;
+            margin-left: 570px;
         }
 
         .video {
@@ -589,11 +584,11 @@
         }
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-* {
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
-}
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
 
     .ftree{
             height: auto;
@@ -601,6 +596,9 @@
         }
 
         .flabel{
+            animation: blinker 1.5s linear infinite;
+            padding-left: 10px;
+            border-left: 6px solid orange;
             margin-top: -30px;
             font-size: 3rem;
             color: #fff;
@@ -608,7 +606,7 @@
             text-shadow: 0 .3rem .5rem #000;
             text-transform: uppercase;
             position: absolute;
-            margin-left: 635px;
+            margin-left: 625px;
         }
 
     .tree {
@@ -851,6 +849,10 @@
                 border: none;
             }
 
+            .label{
+                margin-left: 90px;
+            }
+
             section {
                 flex-direction: column;
             }
@@ -886,8 +888,7 @@
             }
 
             .home3 h1 {
-
-                margin-left: 55px;
+                margin-left: 45px;
                 margin-top: -30px;
             }
 
@@ -943,7 +944,7 @@
                 text-shadow: 0 0.3rem 0.5rem #000;
                 text-transform: uppercase;
                 /* position: absolute; */
-                margin-left: 120px;
+                margin-left: 115px;
             }
 
             .tree {
@@ -1072,7 +1073,7 @@
 
     <section class="blogs" id="blogs">
 
-        <h1 class="heading"> best memories<br> with my family</h1>
+        <h1 class="heading"> best memories<br> with family</h1>
 
         <div class="swiper blogs-slider">
 
@@ -1359,7 +1360,7 @@
                 specifications: [
                     'hight : 5.5 ft',
                     'He is always fulfils our needs and wishes without any complaint. My father is the one who always makes sure that everything in life is in balance.',
-                    'My father worked in the media for 25 years. After this he came to the village and along with the care of grandparents started looking after domestic work like farming.',
+                    'My father worked in the media for 22 years. After this he came to the village and along with the care of grandparents started looking after domestic work like farming.',
                     'He maintains good relations with our relatives, friends and neighbours. he is always encourages me to do something great in life. Also, he helps me out when things are hard and points us in the right direction.'
                 ],
                 imgSrc: 'papa.jpg'
@@ -1514,7 +1515,6 @@
                 },
             },
         });
-
 
     </script>
 
